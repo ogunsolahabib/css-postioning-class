@@ -1,0 +1,110 @@
+body {
+  max-width: 100vw;
+}
+
+.all-cards {
+  border: 1px solid brown;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: max-content;
+  margin: auto;
+  box-shadow: 4px 4px black;
+  /*  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; */
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  display: block;
+  width: fit-content;
+  /* margin: auto; */
+}
+
+input {
+  padding: 0.2rem 1rem;
+  border: 2px solid blue;
+}
+.icon {
+  display: block;
+  margin-top: -25px;
+}
+.box {
+  width: 200px;
+  height: 400px;
+  margin: 1rem;
+}
+
+.black {
+  background: black;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+label {
+  border-bottom: 5px solid pink;
+}
+
+#positioned {
+  background: purple;
+  color: white;
+  padding: 5px;
+  width: 50px;
+  /* z-index: -1; */
+  /* position: fixed; */
+  /* left: 100px; */
+  /* left: 50px; */
+  top: 20px;
+  right: 200px;
+}
+
+.container {
+  /* position: relative; */
+  border: 5px dotted grey;
+  width: 40vw;
+  margin-top: 3rem;
+}
+
+.another {
+  background: gold;
+}
+
+/* static */
+/* fixed */
+/* relative */
+/* absolute */
+/* sticky */
+
+label::before {
+  content: '*';
+  color: red;
+  font-size: 0.8rem;
+}
+
+label::after {
+  content: ' after';
+  color: red;
+  font-size: 0.8rem;
+}
