@@ -108,3 +108,88 @@ label::after {
   color: red;
   font-size: 0.8rem;
 }
+
+
+body {
+  background: orange;
+}
+span{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.menu-bar {
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.menu-bar::before, .menu-bar::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  transition: all .5s ease;
+  
+}
+.menu-bar::before{
+top: -5px;
+}
+.menu-bar::after {
+   bottom: -5px
+}
+.menu-bar:hover{
+  opacity: 0;
+}
+
+.menu-bar:hover::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.menu-bar:hover::after {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+
+
+.plus{
+  margin: 100px;
+}
+.plus::before, .plus::after{
+  content: "";
+  width: 40px;
+  height: 10px;
+  background: black;
+  position: absolute;
+}
+
+.plus::after{
+  transform: rotate(90deg);
+}
+
+
+.box--white {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+}
+
+.bar {
+  height: 40px;
+  background-color: black;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar input {
+  background: white;
+}
+
+.bar span{
+  color: white
+}
